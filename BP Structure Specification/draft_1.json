@@ -1,0 +1,109 @@
+/*
+ * This is a JavaScript Scratchpad.
+ *
+ * Enter some JavaScript, then Right Click or choose from the Execute Menu:
+ * 1. Run to evaluate the selected text (Ctrl+R),
+ * 2. Inspect to bring up an Object Inspector on the result (Ctrl+I), or,
+ * 3. Display to insert the result in a comment after the selection. (Ctrl+L)
+ */
+
+{
+    "id": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Role-enriched BP Model",
+    "description": "Role-enriched Business Process Model",
+
+    "type": "array",
+    "items": {"oneOf": [{"$ref": "#/definitions/fragmentA"}, {"$ref": "#/definitions/fragmentB"}]},   //These two options are distinguished by the value of "patternType"
+                                                                                                      //
+        
+        
+        
+        
+
+    /*fragmentA: Control flow pattern fragment without branch.*/
+    "definitions": {
+        "description": "Control flow pattern fragment without branch.",
+        "fragmentA": {
+            "type": "object",    
+            "properties": {
+                "fagmentID": {"type": "integer"},
+                "granularityLevel": {{"type": "string"}, "enum": ["TopProcessLevel", "MidProcessLevel", "UnderTaskLevel"]},
+                "patternType": {"type": "string", "enum": ["Strict-order Sequential", "Free-order Sequential", "Loop-A", "Loop-B"]},
+                "patternElements": {"type": "array", "items": {                                      }}   ///////////////////////////////
+             }
+            }
+    },
+    
+    
+    
+    /*fragmentB: Control flow pattern fragment with branch.*/
+    "definitions": {
+        "description": "Control flow pattern fragment with branch.",
+        "fragmentB": {
+            "type": "object",    
+            "properties": {
+                "fagmentID": {"type": "integer"},
+                "granularityLevel": {{"type": "string"}, "enum": ["TopProcessLevel", "MidProcessLevel", "UnderTaskLevel"]},
+                "patternType": {"type": "string", "enum": ["Parallel-A", "Parallel-B", "Parallel-C", "Conditional"]},
+                "patternBranches": {
+                    "type": "array",
+                    "items": {
+                        "type": "object", 
+                        "properties": {
+                            "BranchType": {{"type": "string"}, "enum": ["StrictSeqBranch", "FreeSeqBranch"]},
+                            "BranchElements": {"type": "array", "items": {   }}                                                
+                        }
+                    }
+                    
+                }      
+             }
+            }
+    },
+
+    
+    
+    /*Task: A tpye of element*/    
+    "definitions": {
+        "task": {
+            "type": "object",
+            "properties": {
+              "elementID": { "type": "integer" },
+              "ele"
+                "taskName": {"type": "string"},
+                "userRole": {"type": "string"},
+                "pointerValue": {"type": "integer"}
+            }
+        }
+    },
+
+        
+
+    /*Attribute: A tpye of element*/
+    "definitions": {
+        "attribute": {
+            "type": "object",
+            "properties": {
+                "elementID": {"type": "integer"},
+                "attributeName": {"type": "string"},
+                "accessType": {{"type": "string"}, "enum": ["Read", "Write"]},
+                "stroedValue":{        }                                                 ///////
+            }
+        }
+    },
+
+        
+
+    /*Complex Structure: A tpye of element. It can be either a set of tasks or attributes*/
+    "definitions": {
+        "complexStructure": {
+            "type": "object",
+            "properties": {
+                "elementID": {"type": "integer"},
+                "pointerValue": {"type": "integer"}
+            }
+        }
+    }
+    
+    
+}

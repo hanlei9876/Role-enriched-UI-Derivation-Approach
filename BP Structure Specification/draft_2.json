@@ -1,0 +1,211 @@
+{
+  "id": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Control Flow Patterns and Data Operation Patterns",
+
+
+
+
+
+  // Pattern 1: Strict-order Sequential
+  {
+    "Strict-order Seqential": [
+      { "element_1": },
+      { "element_2": },
+      { "element_3": }
+    ]
+  },
+
+
+
+  // Pattern 2: Free-order Sequential
+  {
+    "Free-order Seqential": [
+      { "element_1": },
+      { "element_2": },
+      { "element_3": }
+    ]
+  },
+
+
+
+  // Pattern 3: Parallel_A
+  {
+    "Parallel_A": [
+      {
+        "branch_1": [
+          { "element_1_1": },
+          { "element_1_2": },
+          { "element_1_3": }
+        ]
+      },
+      {
+        "branch_2": [
+          { "element_2_1": },
+          { "element_2_2": },
+          { "element_2_3": }
+        ]
+      },
+      {
+        "branch_3": [
+          { "element_3_1": },
+          { "element_3_2": },
+          { "element_3_3": }
+        ]
+      }
+    ]
+  },
+
+
+
+  // Pattern 4: Parallel_B
+  {
+    "Parallel_B": [
+      {
+        "branch_1": [
+          { "element_1_1": },
+          { "element_1_2": },
+          { "element_1_3": }
+        ]
+      },
+      {
+        "branch_2": [
+          { "element_2_1": },
+          { "element_2_2": },
+          { "element_2_3": }
+        ]
+      },
+      {
+        "branch_3": [
+          { "element_3_1": },
+          { "element_3_2": },
+          { "element_3_3": }
+        ]
+      }
+    ]
+  },
+
+
+
+  // Pattern 5: Parallel_C
+  {
+    "Parallel_C": [
+      {
+        "branch_1": [
+          { "element_1_1": },
+          { "element_1_2": },
+          { "element_1_3": }
+        ]
+      },
+      {
+        "branch_2": [
+          { "element_2_1": },
+          { "element_2_2": },
+          { "element_2_3": }
+        ]
+      },
+      {
+        "branch_3": [
+          { "element_3_1": },
+          { "element_3_2": },
+          { "element_3_3": }
+        ]
+      }
+    ]
+  },
+
+
+
+  // Pattern 6: Conditional
+  {
+    "Conditional": [
+      {
+        "branch_1": [
+          { "element_1_1": },
+          { "element_1_2": },
+          { "element_1_3": }
+        ]
+      },
+      {
+        "branch_2": [
+          { "element_2_1": },
+          { "element_2_2": },
+          { "element_2_3": }
+        ]
+      },
+      {
+        "branch_3": [
+          { "element_3_1": },
+          { "element_3_2": },
+          { "element_3_3": }
+        ]
+      }
+    ]
+  },
+
+
+
+  // Pattern 7: Strict-order Loop
+  {
+    "Strict-order Loop": [
+      { "element_1": },
+      { "element_2": },
+      { "element_3": }
+    ]
+  },
+
+
+
+  // Pattern 8: Free-order Loop
+  {
+    "Free-order Loop": [
+      { "element_1": },
+      { "element_2": },
+      { "element_3": }
+    ]
+  },
+
+
+
+
+  // Task
+  {
+    "task": {
+      "taskID": 555,
+      "taskName": "Review Documents",
+      "userRole": "Manager",
+      "insideData": {
+        "Strict-order Loop": [
+          { "element_1": },
+          { "element_2": },
+          { "element_3": }
+        ]
+      }
+    }
+  },
+
+
+
+
+
+  // Attribute
+  {
+    "attribute": {
+      "attributeID": 555,
+      "attributeName": "job description",
+      "accessType": "Read",
+      "content": "This is for reading."
+    }
+  }
+
+  // Attribute
+  {
+    "attribute": {
+      "attributeID": 555,
+      "attributeName": "job description",
+      "accessType": "Write",
+      "content": "to be written."
+    }
+  }
+
+} 

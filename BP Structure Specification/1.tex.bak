@@ -1,0 +1,99 @@
+{
+    "id": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Role-enriched BP Model",
+    "description": "Role-enriched Business Process Model",
+
+
+    "type": "array",
+    "items": {
+        "title": "Control flow pattern fragment/Data operation pattern fragment",
+        "oneOf": [
+            {"type": "object", 
+             "properties": {
+                 "patternType": {
+                     "type": "string",
+                     "enum": ["Strict-order Sequential", "Free-order Sequential", "Loop-A", "Loop-B"]
+                 },
+                 "patternElements": {
+                     "type": "array",
+                     "items": {"$ref": "#/definitions/node"}
+                 }
+             }
+            },
+            {"type": "object",
+             "properties": {
+                 "patternType": {
+                     "type": "string",
+                     "enum": ["Parallel-A", "Parallel-B", "Parallel-C", "Conditional"]
+                 },
+                 "patternElements": {
+                     "type": "array",
+                     "items": {"$ref": "#/definitions/branch"}
+                 }
+             }
+            }   
+        ]
+    },
+
+
+
+
+
+
+    "definitions": {
+        "node": {
+            "type": "object",
+            "properties": {
+                "nodeName": {"type": "string"}, 
+                "nodeType": {"type": "string", "enum": [ "cde", "attr", "info" ]},
+            },
+        }
+    },
+
+
+
+
+
+    "definitions": {
+        "branch": {
+            "type": "object",
+            "properties": {
+                "branchName":  {"type": "string"},
+                "branchType":  {"type": {"enum": ["Strict_Seq", "Free_Seq", "singleNode", "labelOnly"]}},
+                "preAbsOfBranch":   {"type": "string"},
+                "postAbsOfBranch":  {"type": "string"},
+                "branchNodes": {
+                    "oneOf": [
+                        {"$ref": "#/definitions/nodesInsideBranch"}, {"$ref": "#/definitions/singleAbsInsideBranch"}
+                    ]
+                }
+            },
+            "required": ["branchName", "branchType", "preAbsOfBranch", "postAbsOfBranch", "branchNodes"]
+        }
+    },
+
+
+
+
+
+
+    "definitions": {
+        "nodesInsideBranch":{
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "nodeNameInBranch": {"type": "string"},
+                    "nodeTypeInBranch": {"type": {"enum": ["cde", "attr", "info"]}},
+                    "preAbsInBranch":   {"type": "string"},
+                    "postAbsInBranch":  {"type": "string"}
+                },
+                "required": ["nodeNameInBranch", "nodeTypeInBranch", "preAbsInBranch", "postAbsInBranch"]
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        }
+    }
+
+}

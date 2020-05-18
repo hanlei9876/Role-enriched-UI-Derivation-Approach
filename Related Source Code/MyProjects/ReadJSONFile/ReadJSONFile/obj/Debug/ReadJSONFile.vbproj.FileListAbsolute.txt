@@ -1,0 +1,13 @@
+C:\Users\sony\AppData\Local\Temporary Projects\ReadJSONFile\bin\Debug\ReadJSONFile.exe.config
+C:\Users\sony\Documents\Visual Studio 2015\MyProjects\ReadJSONFile\ReadJSONFile\bin\Debug\ReadJSONFile.exe.config
+C:\Users\sony\Documents\Visual Studio 2015\MyProjects\ReadJSONFile\ReadJSONFile\bin\Debug\ReadJSONFile.exe
+C:\Users\sony\Documents\Visual Studio 2015\MyProjects\ReadJSONFile\ReadJSONFile\bin\Debug\ReadJSONFile.pdb
+C:\Users\sony\Documents\Visual Studio 2015\MyProjects\ReadJSONFile\ReadJSONFile\bin\Debug\ReadJSONFile.xml
+C:\Users\sony\Documents\Visual Studio 2015\MyProjects\ReadJSONFile\ReadJSONFile\obj\Debug\ReadJSONFile.vbprojResolveAssemblyReference.cache
+C:\Users\sony\Documents\Visual Studio 2015\MyProjects\ReadJSONFile\ReadJSONFile\obj\Debug\ReadJSONFile.Resources.resources
+C:\Users\sony\Documents\Visual Studio 2015\MyProjects\ReadJSONFile\ReadJSONFile\obj\Debug\ReadJSONFile.vbproj.GenerateResource.Cache
+C:\Users\sony\Documents\Visual Studio 2015\MyProjects\ReadJSONFile\ReadJSONFile\obj\Debug\ReadJSONFile.exe
+C:\Users\sony\Documents\Visual Studio 2015\MyProjects\ReadJSONFile\ReadJSONFile\obj\Debug\ReadJSONFile.xml
+C:\Users\sony\Documents\Visual Studio 2015\MyProjects\ReadJSONFile\ReadJSONFile\obj\Debug\ReadJSONFile.pdb
+C:\Users\sony\Documents\Visual Studio 2015\MyProjects\ReadJSONFile\ReadJSONFile\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sony\Documents\Visual Studio 2015\MyProjects\ReadJSONFile\ReadJSONFile\bin\Debug\Newtonsoft.Json.xml

@@ -1,0 +1,33 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="UI_WpfApplication1/Application.xaml.vb">
+    <Files>
+      <File FileName="UI_WpfApplication1/Window1.xaml" Line="1" Column="1" />
+      <File FileName="UI_WpfApplication1/Window1.xaml.vb" Line="1" Column="1" />
+      <File FileName="UI_WpfApplication1/Window2.xaml.vb" Line="1" Column="1" />
+      <File FileName="UI_WpfApplication1/Window3.xaml.vb" Line="1" Column="1" />
+      <File FileName="UI_WpfApplication1/Application.xaml.vb" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="UI_WpfApplication1" expanded="True">
+            <Node name="UI_WpfApplication1" expanded="True">
+              <Node name="Application.xaml" expanded="True">
+                <Node name="Application.xaml.vb" selected="True" />
+              </Node>
+              <Node name="Window1.xaml" expanded="True" />
+              <Node name="Window2.xaml" expanded="True" />
+              <Node name="Window3.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

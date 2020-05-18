@@ -1,0 +1,87 @@
+{
+    "id": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Role-enriched BP Model",
+    "description": "Role-enriched Business Process Model",
+
+
+    "type": "array",
+    "items": {
+        "title": "Control flow pattern fragment",
+        "type": "object",
+        "properties": {
+            "fagmentID": "integer",
+            
+            "patternType": {"type": "string", "enum": ["Strict-order Sequential", "Free-order Sequential", "Loop-A", "Loop-B"]},
+            "patternElements": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {"oneOf": [{"$ref": "#/definitions/task"}, {"$ref": "#/definitions/complexStructure"}]},
+                        {"oneOf": [{"$ref": "#/definitions/attribute"}, {"$ref": "#/definitions/complexStructure"}]}
+                    ]
+                }
+            }
+        }
+    }
+},
+
+
+{"type": "object",
+             "properties": {
+                 "patternType": {
+                     "type": "string",
+                     "enum": ["Parallel-A", "Parallel-B", "Parallel-C", "Conditional"]
+                 },
+                 "patternElements": {
+                     "type": "array",
+                     "items": {"oneOf": [{"$ref": "#/definitions/strictSeqBranch"}, {"$ref": "#/definitions/freeSeqBranch"}]}
+                 }
+             }
+            }
+
+
+
+    "definitions": {
+        "task": {
+            "type": "object",
+            "properties": {"taskName": {"type": "string"}},
+        }
+    },
+
+
+    "definitions": {
+        "attribute": {
+            "type": "object",
+            "properties": {"attributeName": {"type": "string"}},
+        }
+    },
+
+
+    "definitions": {
+        "complexStructure": {
+            "description": "A complex structure at a particular granularity level. It can be either a set of tasks or attributes",
+            "type": "object",
+            "properties": {"complexStructureName": {"type": "string"}},
+        }
+    },
+
+
+
+
+
+    "definitions": {
+        "strictSeqBranch": {
+            "type": "object",
+            "properties": {
+                "branchName": {"type": "string"},
+                "nodesInBrnach": {
+                    "oneOf": [
+                        {"$ref": "#/definitions/nodesInsideBranch"}, {"$ref": "#/definitions/singleAbsInsideBranch"}
+                    ]
+                }
+            }
+        }
+    },
+
+}

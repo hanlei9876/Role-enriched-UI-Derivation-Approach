@@ -1,0 +1,258 @@
+{"Strict-order Seqential": [
+    {"element_A": {
+        "task": {
+          "taskID": "A",
+          "taskName": "Announce A Job",
+          "userRole": "Personnel Officer",
+          "insideData": {
+            "Strict-order Sequential": [
+              {"element_A_1": {
+                  "attribute": {
+                    "attributeID": "A_1",
+                    "attributeName": "job description",
+                    "accessType": "Write",
+                    "content": "to be written"}}}]}}}},
+    {"element_B": {
+        "task": {
+          "taskID": "B",
+          "taskName": "Submit Application",
+          "userRole": "Applicant",
+          "insideData": {
+            "Strict-order Sequential": [
+              {
+                "element_B_1": {
+                  "attribute": {
+                    "attributeID": "B_1",
+                    "attributeName": "job description",
+                    "accessType": "Read",
+                    "content": "to be read"
+                  }
+                },
+                "element_B_2": {
+                  "attribute": {
+                    "attributeID": "B_2",
+                    "attributeName": "personal INFO",
+                    "accessType": "Write",
+                    "content": "to be written"
+                  }
+                }
+              }
+            ]
+          }
+        }}},
+    {"element_C": {
+        "task": {
+          "taskID": "C",
+          "taskName": "Write Reference Letter",
+          "userRole": "Referee",
+          "insideData": {
+            "Strict-order Sequential": [
+              {
+                "element_C_1": {
+                  "attribute": {
+                    "attributeID": "C_1",
+                    "attributeName": "reference letter",
+                    "accessType": "Write",
+                    "content": "to be written"
+                  }
+                }
+              }
+            ]
+          }
+        }}},
+    {"element_D": {
+        "Parallel_A": [
+          {"branch_D-b1": [
+            {"element_D-b1-1": {
+                  "task": {
+                    "taskID": "D-b1-1",
+                    "taskName": "Arrange Interview",
+                    "userRole": "Personnel Officer",
+                    "insideData": {
+                      "Free-order Sequential": [
+                        {
+                          "element_D-b1-1_1": {
+                            "attribute": {
+                              "attributeID": "D-b1-1_1",
+                              "attributeName": "date & time of interview",
+                              "accessType": "Write",
+                              "content": "to be written"
+                            }
+                          },
+                          "element_D-b1-1_2": {
+                            "attribute": {
+                              "attributeID": "D-b1-1_2",
+                              "attributeName": "venue of interview",
+                              "accessType": "Write",
+                              "content": "to be written"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }}},
+              {"element_D-b1-2": {
+                  "task": {
+                    "taskID": "D-b1-2",
+                    "taskName": "Confirm Interview",
+                    "userRole": "Applicant",
+                    "insideData": {
+                      "Strict-order Sequential": [
+                        {
+                          "element_D-b1-2_1": {
+                            "Free-order Sequential": [
+                              {
+                                "element_D-b1-2_1_1": {
+                                  "attribute": {
+                                    "attributeID": "D-b1-2_1_1",
+                                    "attributeName": "date & time of interview",
+                                    "accessType": "Read",
+                                    "content": "to be read"
+                                  }
+                                },
+                                "element_D-b1-2_1_2": {
+                                  "attribute": {
+                                    "attributeID": "D-b1-2_1_2",
+                                    "attributeName": "venue of interview",
+                                    "accessType": "Read",
+                                    "content": "to be read"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "element_D-b1-2_2": {
+                            "attribute": {
+                              "attributeID": "D-b1-2_2",
+                              "attributeName": "confirmation of interview",
+                              "accessType": "Write",
+                              "content": "to be written"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }}}]},
+          {"branch_D-b2": [
+              {"element_D-b2-1": {
+                "task": {
+                    "taskID": "D-b2-1",
+                    "taskName": "Review Reference Letter",
+                    "userRole": "Personnel Officer",
+                    "insideData": {
+                      "Strict-order Sequential": [
+                        {
+                          "element_D-b2-1_1": {
+                            "attribute": {
+                              "attributeID": "D-b2-1_1",
+                              "attributeName": "reference letter",
+                              "accessType": "Read",
+                              "content": "to be read"
+                            }
+                          },
+                          "element_D-b2-1_2": {
+                            "attribute": {
+                              "attributeID": "D-b2-1_2",
+                              "attributeName": "reference evaluation report",
+                              "accessType": "Write",
+                              "content": "to be written"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }}}]}]}},
+    {"element_E": {
+        "task": {
+          "taskID": "E",
+          "taskName": "Interview",
+          "userRole": "Personnel Officer",
+          "insideData": {
+            "Strict-order Sequential": [
+              {
+                "element_E_1": {
+                  "attribute": {
+                    "attributeID": "E_1",
+                    "attributeName": "interview report",
+                    "accessType": "Write",
+                    "content": "to be written"
+                  }
+                }
+              }
+            ]
+          }
+        }}},
+    {"element_F": {
+        "task": {
+          "taskID": "F",
+          "taskName": "Make Decision",
+          "userRole": "Personnel Officer",
+          "insideData": {
+            "Strict-order Sequential": [
+              {
+                "element_F_1": {
+                  "Free-order Sequential": [
+                    {
+                      "element_F_1_1": {
+                        "attribute": {
+                          "attributeID": "F_1_1",
+                          "attributeName": "reference evaluation report",
+                          "accessType": "Read",
+                          "content": "to be read"
+                        }
+                      },
+                      "element_F_1_2": {
+                        "attribute": {
+                          "attributeID": "F_1_2",
+                          "attributeName": "interview report",
+                          "accessType": "Read",
+                          "content": "to be read"
+                        }
+                      },
+                      "element_F_1_3": {
+                        "attribute": {
+                          "attributeID": "F_1_3",
+                          "attributeName": "personal INFO",
+                          "accessType": "Read",
+                          "content": "to be read"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "element_F_2": {
+                  "Conditional": [
+                    {
+                      "branch_F_2-b1": [
+                        {
+                          "element_F_2-b1-1": {
+                            "attribute": {
+                              "attributeID": "F_2-b1-1",
+                              "attributeName": "approve",
+                              "accessType": "Write",
+                              "content": "to be written"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "branch_F_2-b2": [
+                        {
+                          "element_F_2-b2-1": {
+                            "attribute": {
+                              "attributeID": "F_2-b2-1",
+                              "attributeName": "reject",
+                              "accessType": "Write",
+                              "content": "to be written"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }}}]}

@@ -1,0 +1,117 @@
+﻿{
+  "Strict-order Sequential": [
+    {
+      "element_F_1": {
+        "Free-order Sequential": [
+          {
+            "element_F_1_1": {
+              "attribute": {
+                "attributeID": "F_1_1",
+                "attributeName": "reference evaluation report",
+                "accessType": "Read",
+                "content": "to be read"
+              }
+            }
+          },
+          {
+            "element_F_1_2": {
+              "attribute": {
+                "attributeID": "F_1_2",
+                "attributeName": "interview report",
+                "accessType": "Read",
+                "content": "to be read"
+              }
+            }
+          },
+          {
+            "element_F_1_3": {
+              "attribute": {
+                "attributeID": "F_1_3",
+                "attributeName": "personal INFO",
+                "accessType": "Read",
+                "content": "to be read"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "element_F_2": {
+        "attribute": {
+          "attributeID": "F_2",
+          "attributeName": "approve?",
+          "accessType": "Write",
+          "content": "to be written"
+        }
+      }
+    },
+    {
+      "element_F_3": {
+        "Conditional": [
+          {
+            "branch_F_3-b1": [
+              {
+                "element_F_3-b1-1": {
+                  "attribute": {
+                    "attributeID": "F_3-b1-1",
+                    "attributeName": "approve letter",
+                    "accessType": "Write",
+                    "content": "to be written"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "branch_F_3-b2": [
+              {
+                "element_F_3-b2-1": {
+                  "attribute": {
+                    "attributeID": "F_3-b2-1",
+                    "attributeName": "rejection reason",
+                    "accessType": "Write",
+                    "content": "to be written"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+
+
+
+[
+  [
+    "job description"
+  ],
+  [
+    [
+      "date and time of interview",
+      "venue of interview"
+    ],
+    [
+      "reference letter",
+      "reference evaluation report"
+    ]
+  ],
+  [
+    "interview report"
+  ],
+  [
+    [
+      "reference evaluation report",
+      "interview report",
+      "personal INFO"
+    ],
+    "approve?",
+    [
+      "approve letter",
+      "rejection reason"
+    ]
+  ]
+]

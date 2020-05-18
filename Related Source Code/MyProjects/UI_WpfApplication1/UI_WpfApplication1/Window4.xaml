@@ -1,0 +1,14 @@
+﻿<Window x:Class="Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI_WpfApplication1"
+        mc:Ignorable="d"
+        Title="Window4" Height="202.806" Width="420.918">
+    <Grid>
+        <Label x:Name="label_InterviewReport" Content="" HorizontalAlignment="Left" Margin="30,73,0,0" VerticalAlignment="Top" Width="106" Height="32"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="164,67,0,0" Stroke="Black" VerticalAlignment="Top" Width="214" Tag="sjhjfkahkjhf"/>
+
+    </Grid>
+</Window>
