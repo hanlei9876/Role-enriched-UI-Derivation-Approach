@@ -1,4 +1,4 @@
-# Role-enriched-UI-Derivation-Approach-
+# Role-enriched-UI-Derivation-Approach
 
 This project is to create a prototype implementing my PhD thesis work "User Interface Derivation based on a Role-enriched Business Process Model"
 
